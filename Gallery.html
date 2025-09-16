@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Martial Arts Academy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #0f172a; color: white; }
+    .carousel-track { display: flex; transition: transform 0.6s ease-in-out; }
+    .slide { flex: 0 0 100%; padding: 0.5rem; }
+    @media (min-width: 768px) { .slide { flex: 0 0 50%; } }   /* 2 at once */
+    @media (min-width: 1024px) { .slide { flex: 0 0 33.333%; } } /* 3 at once */
+
+    .dot { width: 12px; height: 12px; border-radius: 50%; cursor: pointer; }
+    .dot-active { background: #ef4444; }
+    .dot-inactive { background: #475569; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="bg-gradient-to-r from-slate-900 to-black text-white p-4 shadow-lg fixed w-full top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Logo + Brand -->
+    <a href="index.html" class="flex items-center space-x-3">
+      <!-- Circle logo -->
+      <img src="logo.avif" alt="Logo" class="w-10 h-10 rounded-full border-2 border-red-500 shadow-lg">
+      <!-- Brand name -->
+      <span class="text-2xl font-bold tracking-wider">Shaurya Martial Arts</span>
+    </a>
+    
+    <!-- Menu -->
+    <div class="space-x-6">
+      <a href="index.html" class="nav-link hover:text-red-400 transition">Home</a>
+      <a href="aboutus.html" class="nav-link hover:text-red-400 transition">About</a>
+      <a href="corporate-training.html" class="nav-link hover:text-red-400 transition">Corporate Training</a>
+      <a href="Security.html" class="nav-link hover:text-red-400 transition">Security Services </a>
+      <a href="Gallery.html" class="nav-link hover:text-red-400 transition text-red-500">Gallery</a>
+    </div>
+  </div>
+</nav>
+
+
+  <main class="mt-24">
+
+    <!-- Corporate Events -->
+    <section class="py-20 bg-gradient-to-r from-black to-slate-900">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-8">Corporate Events</h2>
+        <div class="relative overflow-hidden">
+          <div class="carousel-track" id="track-events">
+            <div class="slide"><img src="https://picsum.photos/seed/event1/600/400" class="rounded-lg shadow-lg w-full"></div>
+            <div class="slide"><img src="https://picsum.photos/seed/event2/600/400" class="rounded-lg shadow-lg w-full"></div>
+            <div class="slide"><img src="https://picsum.photos/seed/event3/600/400" class="rounded-lg shadow-lg w-full"></div>
+            <div class="slide"><img src="https://picsum.photos/seed/event4/600/400" class="rounded-lg shadow-lg w-full"></div>
+            <div class="slide"><img src="https://picsum.photos/seed/event5/600/400" class="rounded-lg shadow-lg w-full"></div>
+          </div>
+          <button class="prev absolute left-2 top-1/2 -translate-y-1/2 bg-slate-800 px-3 py-2 rounded-full">&#10094;</button>
+          <button class="next absolute right-2 top-1/2 -translate-y-1/2 bg-slate-800 px-3 py-2 rounded-full">&#10095;</button>
+          <div class="dots flex justify-center mt-6 space-x-2" id="dots-events"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training & Classes -->
+    <section class="py-20 bg-gradient-to-r from-slate-900 to-black">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-8">Training & Classes</h2>
+        <div class="relative overflow-hidden">
+          <div class="carousel-track" id="track-training">
+            <div class="slide"><img src="https://picsum.photos/seed/train1/600/400" class="rounded-lg shadow-lg w-full"></div>
+            <div class="slide"><img src="https://picsum.photos/seed/train2/600/400" class="rounded-lg shadow-lg w-full"></div>
+            <div class="slide"><img src="https://picsum.photos/seed/train3/600/400" class="rounded-lg shadow-lg w-full"></div>
+            <div class="slide"><img src="https://picsum.photos/seed/train4/600/400" class="rounded-lg shadow-lg w-full"></div>
+            <div class="slide"><img src="https://picsum.photos/seed/train5/600/400" class="rounded-lg shadow-lg w-full"></div>
+          </div>
+          <button class="prev absolute left-2 top-1/2 -translate-y-1/2 bg-slate-800 px-3 py-2 rounded-full">&#10094;</button>
+          <button class="next absolute right-2 top-1/2 -translate-y-1/2 bg-slate-800 px-3 py-2 rounded-full">&#10095;</button>
+          <div class="dots flex justify-center mt-6 space-x-2" id="dots-training"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Activities -->
+    <section class="py-20 bg-gradient-to-r from-black to-slate-900">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-8">Other Activities</h2>
+        <div class="relative overflow-hidden">
+          <div class="carousel-track" id="track-other">
+            <div class="slide"><img src="https://picsum.photos/seed/other1/600/400" class="rounded-lg shadow-lg w-full"></div>
+            <div class="slide"><img src="https://picsum.photos/seed/other2/600/400" class="rounded-lg shadow-lg w-full"></div>
+            <div class="slide"><img src="https://picsum.photos/seed/other3/600/400" class="rounded-lg shadow-lg w-full"></div>
+            <div class="slide"><img src="https://picsum.photos/seed/other4/600/400" class="rounded-lg shadow-lg w-full"></div>
+            <div class="slide"><img src="https://picsum.photos/seed/other5/600/400" class="rounded-lg shadow-lg w-full"></div>
+          </div>
+          <button class="prev absolute left-2 top-1/2 -translate-y-1/2 bg-slate-800 px-3 py-2 rounded-full">&#10094;</button>
+          <button class="next absolute right-2 top-1/2 -translate-y-1/2 bg-slate-800 px-3 py-2 rounded-full">&#10095;</button>
+          <div class="dots flex justify-center mt-6 space-x-2" id="dots-other"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-10 mt-20">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">About Us</h3>
+        <p>We are a premier martial arts academy dedicated to training, discipline, and personal growth. Our mission is to empower students through martial arts.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-red-400">Home</a></li>
+          <li><a href="Security.html" class="hover:text-red-400">Security Services</a></li>
+          <li><a href="events.html" class="hover:text-red-400">Events</a></li>
+          <li><a href="ContactUs.html" class="hover:text-red-400">Contact</a></li>
+          <li><a href="gallery.html" class="hover:text-red-400">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">Follow Us</h3>
+        <div class="flex space-x-4">
+          <a href="https://www.facebook.com/shauryamartialartsfitness/" class="hover:text-red-400">Facebook</a>
+          <a href="https://www.instagram.com/shauryamartialarts/?hl=en" class="hover:text-red-400">Instagram</a>
+          <a href="https://www.youtube.com/@shauryamartialarts3938" class="hover:text-red-400">YouTube</a>
+        </div>
+      <div>
+        <br>
+        <h3 class="text-xl font-bold mb-4 text-white">Contact Info</h3>
+        <p>Above Powerlift Fitness, Opp. Rabindranath Tagore School, Balewadi Rd, Pune – 411045</p>
+        <p>shaurya.martialarts@gmail.com</p>
+        <p>+91 91093 61581</p>
+      </div>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-slate-500">© 2025 Martial Arts Academy. All rights reserved.</div>
+  </footer>
+
+  <script>
+    function setupCarousel(trackId, dotsId) {
+      const track = document.getElementById(trackId);
+      const slides = Array.from(track.children);
+      const prev = track.parentElement.querySelector('.prev');
+      const next = track.parentElement.querySelector('.next');
+      const dotsContainer = document.getElementById(dotsId);
+      let index = 0;
+
+      const visibleCount = () => {
+        if(window.innerWidth >= 1024) return 3;
+        if(window.innerWidth >= 768) return 2;
+        return 1;
+      };
+
+      function createDots() {
+        dotsContainer.innerHTML = '';
+        const total = Math.ceil(slides.length / visibleCount());
+        for(let i=0; i<total; i++) {
+          const dot = document.createElement('span');
+          dot.className = `dot ${i===0?'dot-active':'dot-inactive'}`;
+          dot.onclick = () => showSlide(i);
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function showSlide(i) {
+        const total = Math.ceil(slides.length / visibleCount());
+        index = (i+total)%total;
+        track.style.transform = `translateX(-${index*100}%)`;
+        Array.from(dotsContainer.children).forEach((d,j)=>d.className=`dot ${j===index?'dot-active':'dot-inactive'}`);
+      }
+
+      prev.onclick = () => showSlide(index-1);
+      next.onclick = () => showSlide(index+1);
+
+      window.addEventListener('resize', ()=>{createDots(); showSlide(0);});
+      createDots(); showSlide(0);
+    }
+
+    setupCarousel('track-events','dots-events');
+    setupCarousel('track-training','dots-training');
+    setupCarousel('track-other','dots-other');
+  </script>
+</body>
+</html>

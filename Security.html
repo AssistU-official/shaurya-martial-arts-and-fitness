@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Services - Shaurya Martial Arts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #0f172a; color: white; }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .punch { animation: punch 0.3s ease; }
+    @keyframes punch {
+      0% { transform: scale(1); box-shadow: 0 0 0 rgba(255,0,0,0); }
+      50% { transform: scale(1.2); box-shadow: 0 0 20px rgba(255,0,0,0.8); }
+      100% { transform: scale(1); box-shadow: 0 0 0 rgba(255,0,0,0); }
+    }
+    .btn-primary {
+      @apply bg-gradient-to-r from-green-500 to-green-700 text-white px-6 py-2 rounded hover:scale-105 transition;
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-white">
+<!-- Navbar -->
+<nav class="bg-gradient-to-r from-slate-900 to-black text-white p-4 shadow-lg fixed w-full top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Logo + Brand -->
+    <a href="index.html" class="flex items-center space-x-3">
+      <!-- Circle logo -->
+      <img src="logo.avif" alt="Logo" class="w-10 h-10 rounded-full border-2 border-red-500 shadow-lg">
+      <!-- Brand name -->
+      <span class="text-2xl font-bold tracking-wider">Shaurya Martial Arts</span>
+    </a>
+    
+    <!-- Menu -->
+    <div class="space-x-6">
+      <a href="index.html" class="nav-link hover:text-red-400 transition">Home</a>
+      <a href="aboutus.html" class="nav-link hover:text-red-400 transition">About</a>
+      <a href="corporate-training.html" class="nav-link hover:text-red-400 transition">Corporate Training</a>
+      <a href="Security.html" class="nav-link hover:text-red-400 transition text-red-500">Security Services </a>
+      <a href="Gallery.html" class="nav-link hover:text-red-400 transition ">Gallery</a>
+    </div>
+  </div>
+</nav>
+
+
+  <main class="mt-24 fade-in">
+
+    <!-- Hero / Header -->
+    <section class="relative h-[60vh] flex items-center justify-center text-center bg-black/80">
+      <img src="https://source.unsplash.com/1600x900/?security,guards" alt="Security Guards" class="absolute inset-0 w-full h-full object-cover opacity-50" />
+      <div class="relative z-10 px-6">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">Security Services</h1>
+        <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+          Shaurya Martial Arts, in partnership with Shivoshambhu Services Pvt Ltd, offers unparalleled security solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Our Services -->
+    <section class="py-16 container mx-auto px-6 fade-in">
+      <h2 class="text-3xl font-bold text-red-500 mb-6">About Our Services</h2>
+      <p class="text-slate-300 mb-4">
+        Shaurya Martial Arts, in partnership with Shivoshambhu Services Pvt Ltd, offers unparalleled security solutions. Our team comprises highly trained security guards, rigorously disciplined by military expertise and honed by the precision of Shaurya Martial Arts.
+      </p>
+      <p class="text-slate-300 mb-4">
+        We provide comprehensive security services for both residential and commercial establishments, ensuring the safety and well-being of your property and loved ones.
+      </p>
+      <p class="text-slate-300">
+        Experience a level of security that goes beyond the ordinary with the combined strength of martial arts prowess and military discipline.
+      </p>
+    </section>
+
+    <!-- Our Services Categories -->
+    <section class="py-16 bg-gradient-to-r from-black to-slate-900 fade-in">
+      <div class="container mx-auto px-6 space-y-12">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-2xl font-bold text-red-500 mb-2">Business Security</h3>
+            <p class="text-slate-300">
+              Ensuring the safety and security of businesses with our expert security services tailored to meet specific needs and requirements.
+            </p>
+          </div>
+          <div>
+            <img src="https://source.unsplash.com/800x500/?office,security" alt="Business Security" class="rounded-lg shadow-lg">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="order-2 md:order-1">
+            <img src="https://source.unsplash.com/800x500/?house,security" alt="Residential Security" class="rounded-lg shadow-lg">
+          </div>
+          <div class="order-1 md:order-2">
+            <h3 class="text-2xl font-bold text-red-500 mb-2">Residential Security</h3>
+            <p class="text-slate-300">
+              Providing powerful and reliable security for residential settings. Our guards are trained to protect themselves and those under their watch.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-2xl font-bold text-red-500 mb-2">Personal / Bodyguard Services</h3>
+            <p class="text-slate-300">
+              Offering personal bodyguard services with guards trained in martial arts by ex-service personnel to provide the highest level of protection.
+            </p>
+          </div>
+          <div>
+            <img src="https://source.unsplash.com/800x500/?bodyguard,security" alt="Bodyguard Services" class="rounded-lg shadow-lg">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Call to Action / Contact form -->
+    <section class="py-16 container mx-auto px-6 fade-in">
+      <div class="max-w-xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-red-500 mb-4">To Know More</h2>
+        <p class="text-slate-300 mb-6">Get in touch so we can start working together.</p>
+        <form id="security-form" class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" name="firstName" placeholder="First Name" class="w-full px-4 py-2 rounded bg-slate-700 text-white" required>
+            <input type="text" name="lastName" placeholder="Last Name" class="w-full px-4 py-2 rounded bg-slate-700 text-white" required>
+          </div>
+          <input type="email" name="email" placeholder="Email" class="w-full px-4 py-2 rounded bg-slate-700 text-white" required>
+          <input type="text" name="companyOrResidence" placeholder="Company / Residential Society" class="w-full px-4 py-2 rounded bg-slate-700 text-white">
+          <textarea name="message" placeholder="Message / Requirements" rows="4" class="w-full px-4 py-2 rounded bg-slate-700 text-white"></textarea>
+          <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-green-700 text-white px-6 py-2 rounded hover:scale-105 transform transition">Send Request</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-10 mt-20">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">About Us</h3>
+        <p>We are a premier martial arts academy dedicated to training, discipline, and personal growth. Our mission is to empower students through martial arts.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-red-400">Home</a></li>
+          <li><a href="Security.html" class="hover:text-red-400">Security Services</a></li>
+          <li><a href="events.html" class="hover:text-red-400">Events</a></li>
+          <li><a href="ContactUs.html" class="hover:text-red-400">Contact</a></li>
+          <li><a href="gallery.html" class="hover:text-red-400">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">Follow Us</h3>
+        <div class="flex space-x-4">
+          <a href="https://www.facebook.com/shauryamartialartsfitness/" class="hover:text-red-400">Facebook</a>
+          <a href="https://www.instagram.com/shauryamartialarts/?hl=en" class="hover:text-red-400">Instagram</a>
+          <a href="https://www.youtube.com/@shauryamartialarts3938" class="hover:text-red-400">YouTube</a>
+        </div>
+      <div>
+        <br>
+        <h3 class="text-xl font-bold mb-4 text-white">Contact Info</h3>
+        <p>Above Powerlift Fitness, Opp. Rabindranath Tagore School, Balewadi Rd, Pune – 411045</p>
+        <p>shaurya.martialarts@gmail.com</p>
+        <p>+91 91093 61581</p>
+      </div>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-slate-500">© 2025 Martial Arts Academy. All rights reserved.</div>
+  </footer>
+
+  </main>
+
+  <script>
+    // Fade-in observer
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry=>{
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    fadeEls.forEach(el => observer.observe(el));
+
+    // Form submission placeholder
+    const secForm = document.getElementById('security-form');
+    secForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thank you for your interest. We will contact you soon regarding security services.');
+      secForm.reset();
+    });
+
+    // Nav punch effect
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', e=>{
+        e.target.classList.add('punch');
+        setTimeout(()=> e.target.classList.remove('punch'), 300);
+      });
+    });
+  </script>
+
+</body>
+</html>

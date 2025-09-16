@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Shaurya Martial Arts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #0f172a; color: white; }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .punch { animation: punch 0.3s ease; }
+    @keyframes punch {
+      0% { transform: scale(1); box-shadow: 0 0 0 rgba(255,0,0,0); }
+      50% { transform: scale(1.2); box-shadow: 0 0 20px rgba(255,0,0,0.8); }
+      100% { transform: scale(1); box-shadow: 0 0 0 rgba(255,0,0,0); }
+    }
+    .btn-primary {
+      @apply bg-gradient-to-r from-green-500 to-green-700 text-white px-6 py-2 rounded hover:scale-105 transition;
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-white">
+
+  <!-- Navbar -->
+<nav class="bg-gradient-to-r from-slate-900 to-black text-white p-4 shadow-lg fixed w-full top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Logo + Brand -->
+    <a href="index.html" class="flex items-center space-x-3">
+      <!-- Circle logo -->
+      <img src="logo.avif" alt="Logo" class="w-10 h-10 rounded-full border-2 border-red-500 shadow-lg">
+      <!-- Brand name -->
+      <span class="text-2xl font-bold tracking-wider">Shaurya Martial Arts</span>
+    </a>
+    
+    <!-- Menu -->
+    <div class="space-x-6">
+      <a href="index.html" class="nav-link hover:text-red-400 transition">Home</a>
+      <a href="aboutus.html" class="nav-link hover:text-red-400 transition text-red-500">About</a>
+      <a href="corporate-training.html" class="nav-link hover:text-red-400 transition">Corporate Training</a>
+      <a href="Security.html" class="nav-link hover:text-red-400 transition">Security Services </a>
+      <a href="Gallery.html" class="nav-link hover:text-red-400 transition ">Gallery</a>
+    </div>
+  </div>
+</nav>
+
+  <main class="mt-24">
+
+    <!-- Hero / About Header -->
+    <section class="relative h-[60vh] flex items-center justify-center text-center fade-in">
+      <img src="logo.avif" alt="Martial Arts Dojo" class="absolute inset-0 w-full h-full object-cover opacity-50">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 px-6">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">About Us</h1>
+        <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+          Shaurya Martial Arts & Self Defence — dedicated to empower everyone, building strength in body, clarity in mind, and courage in spirit.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-16 container mx-auto px-6 fade-in">
+      <h2 class="text-3xl font-bold text-red-500 mb-6">Our Story</h2>
+      <p class="text-slate-300 mb-4">
+        Shaurya Martial Arts & Self Defence is instrumental in learning martial arts for all age groups and genders. Especially to learn self defense, which is one of the key elements of martial arts. With a team of qualified trainers trained both in India and abroad, and a well-equipped academy, we provide training with a different approach.
+      </p>
+      <p class="text-slate-300 mb-4">
+        Our flexible training methods and rigorous safety measures allow us to teach martial arts even to those people who don’t have previous experience or those apprehensive about physical exercise. We believe martial arts is not just training the body, but shaping the mind and uplifting the spirit.
+      </p>
+      <p class="text-slate-300">
+        Our philosophy: Martial Arts is a life art — not exclusive to the physically strong. It develops fitness, endurance, flexibility, and confidence in every individual. It teaches discipline, respect, resilience, and inner strength.
+      </p>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="relative py-24 bg-gradient-to-r from-black to-slate-900 fade-in">
+      <div class="container mx-auto px-6 relative">
+
+        <!-- Glow spotlight -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div class="w-[500px] h-[500px] rounded-full bg-red-500/20 blur-3xl"></div>
+        </div>
+
+        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          
+          <!-- Founder Image -->
+          <div class="flex justify-center md:justify-end">
+            <div class="relative group">
+                <div class="absolute -top-4 -right-4 bg-gradient-to-r from-red-500 to-red-700 text-white px-4 py-2 rounded-full shadow-lg text-sm font-semibold">
+                Founder
+              </div>
+              <a href="https://www.youtube.com/watch?v=zqoq-KCr2xk&t=2s" title="hover text">
+              <img src="founder.svg" 
+                   alt="Founder Piyush Waghade"
+                   class="w-72 h-72 rounded-full object-cover shadow-2xl transform group-hover:scale-105 transition duration-500 border-4 border-red-500">
+              <!-- Badge -->
+              </a>
+            </div>
+          </div>
+
+          <!-- Founder Details -->
+          <div class="bg-slate-800/40 backdrop-blur-xl rounded-2xl p-8 shadow-2xl border border-slate-700 hover:scale-[1.02] transition duration-500">
+            <h2 class="text-3xl font-bold text-red-500 mb-2">Meet the Founder</h2>
+            <h3 class="text-2xl font-semibold text-white mb-4">Piyush Waghade – Chief Coach</h3>
+            <p class="text-slate-300 mb-3">
+              Piyush Waghade is the visionary behind Shaurya Martial Arts. With over two decades of martial arts expertise, he has combined passion, discipline, and leadership to build a one-of-a-kind academy.
+            </p>
+            <p class="text-slate-300 mb-3">
+              A Black Belt in Taekwondo, certified in Krav Maga (Singapore), and deeply experienced in Kickboxing and Boxing, Piyush brings world-class training into every session. 
+            </p>
+            <p class="text-slate-300">
+              His philosophy is simple: <em>martial arts is more than combat — it’s about resilience, focus, and respect</em>. He ensures Shaurya Martial Arts remains not just a training ground, but a community of growth and empowerment.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy & Values -->
+    <section class="py-16 container mx-auto px-6 fade-in">
+      <h2 class="text-3xl font-bold text-red-500 mb-6 text-center">Philosophy & Values</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold text-white mb-2">Discipline & Respect</h3>
+          <p class="text-slate-300">
+            True mastery comes from discipline — in training, mindset, and behavior. Respect for ourselves, others, and the art is integral to all we do.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-white mb-2">Safety & Growth</h3>
+          <p class="text-slate-300">
+            Safety is our top priority. Every technique and class nurtures growth while keeping students secure and confident.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-white mb-2">Mind over Muscle</h3>
+          <p class="text-slate-300">
+            While physical strength matters, mental clarity and emotional control sustain progress. We train both body and mind.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-white mb-2">Community & Belonging</h3>
+          <p class="text-slate-300">
+            We aim to build a community where everyone feels included, supported, and empowered through their martial arts journey.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  <!-- Call to Action -->
+<section class="py-16 container mx-auto px-6 fade-in text-center">
+  <h2 class="text-3xl font-bold text-red-500 mb-4">Join Us Today</h2>
+  <p class="text-slate-300 mb-6">
+    Take your first step — whether you're seeking fitness, confidence, or skill. Our doors are open.
+  </p>
+  <a href="ContactUs.html" 
+     class="bg-gradient-to-r from-green-500 to-green-700 text-white px-6 py-3 rounded-lg shadow-lg hover:scale-105 transition inline-block">
+    Get Started
+  </a>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-10 mt-20">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">About Us</h3>
+        <p>We are a premier martial arts academy dedicated to training, discipline, and personal growth. Our mission is to empower students through martial arts.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-red-400">Home</a></li>
+          <li><a href="Security.html" class="hover:text-red-400">Security Services</a></li>
+          <li><a href="events.html" class="hover:text-red-400">Events</a></li>
+          <li><a href="ContactUs.html" class="hover:text-red-400">Contact</a></li>
+          <li><a href="gallery.html" class="hover:text-red-400">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">Follow Us</h3>
+        <div class="flex space-x-4">
+          <a href="https://www.facebook.com/shauryamartialartsfitness/" class="hover:text-red-400">Facebook</a>
+          <a href="https://www.instagram.com/shauryamartialarts/?hl=en" class="hover:text-red-400">Instagram</a>
+          <a href="https://www.youtube.com/@shauryamartialarts3938" class="hover:text-red-400">YouTube</a>
+        </div>
+      <div>
+        <br>
+        <h3 class="text-xl font-bold mb-4 text-white">Contact Info</h3>
+        <p>Above Powerlift Fitness, Opp. Rabindranath Tagore School, Balewadi Rd, Pune – 411045</p>
+        <p>shaurya.martialarts@gmail.com</p>
+        <p>+91 91093 61581</p>
+      </div>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-slate-500">© 2025 Martial Arts Academy. All rights reserved.</div>
+  </footer>
+  <script>
+    // Fade-in sections
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    fadeEls.forEach(el => observer.observe(el));
+
+    // Nav punch effect
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', e => {
+        e.target.classList.add('punch');
+        setTimeout(() => e.target.classList.remove('punch'), 300);
+      });
+    });
+  </script>
+
+</body>
+</html>

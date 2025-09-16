@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martial Arts Academy - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .punch { animation: punch 0.3s ease; }
+    @keyframes punch {
+      0% { transform: scale(1); box-shadow: 0 0 0 rgba(255,0,0,0); }
+      50% { transform: scale(1.2); box-shadow: 0 0 20px rgba(255,0,0,0.8); }
+      100% { transform: scale(1); box-shadow: 0 0 0 rgba(255,0,0,0); }
+    }
+    .fighter-card {
+      position: relative;
+      overflow: visible;
+      background: rgba(15,15,15,0.8);
+      border: 1px solid #374151;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, border 0.3s ease;
+    }
+    .fighter-card:hover {
+      transform: scale(1.05);
+      border-color: #ef4444;
+    }
+    .fighter-img {
+      position: absolute;
+      top: -80px;
+      right: -20px;
+      width: 160px;
+      z-index: 5;
+      filter: drop-shadow(0 0 20px rgba(255,0,0,0.6));
+    }
+    .principle-card {
+      background: rgba(20,20,20,0.9);
+      border: 1px solid #374151;
+      border-radius: 0.75rem;
+      padding: 2rem;
+      transition: transform 0.3s ease, border 0.3s ease;
+      text-align: center;
+    }
+    .principle-card:hover {
+      transform: translateY(-6px) scale(1.05);
+      border-color: #ef4444;
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-white relative z-10">
+
+  <!-- Navbar -->
+<nav class="bg-gradient-to-r from-slate-900 to-black text-white p-4 shadow-lg fixed w-full top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Logo + Brand -->
+    <a href="index.html" class="flex items-center space-x-3">
+      <!-- Circle logo -->
+      <img src="logo.avif" alt="Logo" class="w-10 h-10 rounded-full border-2 border-red-500 shadow-lg">
+      <!-- Brand name -->
+      <span class="text-2xl font-bold tracking-wider">Shaurya Martial Arts</span>
+    </a>
+    
+    <!-- Menu -->
+    <div class="space-x-6">
+      <a href="index.html" class="nav-link hover:text-red-400 transition text-red-500">Home</a>
+      <a href="aboutus.html" class="nav-link hover:text-red-400 transition">About</a>
+      <a href="corporate-training.html" class="nav-link hover:text-red-400 transition">Corporate Training</a>
+      <a href="Security.html" class="nav-link hover:text-red-400 transition">Security Services </a>
+      <a href="Gallery.html" class="nav-link hover:text-red-400 transition ">Gallery</a>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero -->
+  <section class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-red-800 via-black to-red-900 text-center relative">
+    <h1 class="text-6xl md:text-7xl font-extrabold mb-6 animate-pulse">Unleash Your Inner Warrior</h1>
+    <p class="text-xl text-slate-200 max-w-2xl mx-auto mb-8">Train, grow, and transform with our world-class martial arts programs. Become stronger, faster, and unstoppable.</p>
+    <a href="ContactUs.html" class="bg-gradient-to-r from-red-600 to-red-800 px-6 py-3 rounded-lg font-semibold hover:scale-110 transition">Get Started</a>
+  </section>
+
+  <!-- Martial Arts -->
+  <section class="py-20 container mx-auto px-6">
+    <h2 class="text-5xl font-bold mb-12 text-center">Martial Arts We Offer</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="fighter-card">
+        <img src="self_defence.svg" alt="Karate" class="fighter-img">
+        <div class="relative z-10">
+          <h3 class="text-2xl font-bold mb-2">Self Defence</h3>
+          <p class="text-slate-200 mb-4">This is primarily focused training. Its an Amalgamation of Krav Maga, Taekwondo and Kick Boxing. This program makes you ready to handle armed and unarmed attacks in urban scenarios.<br></p>
+          <div class="flex gap-3">
+            <a href="./Sports/Self_Defence.html" class="bg-gradient-to-r from-red-500 to-red-700 px-4 py-2 rounded">Learn More</a>
+            <a href="ContactUs.html" class="bg-gradient-to-r from-green-500 to-green-700 px-4 py-2 rounded">Book Session</a>
+          </div>
+        </div>
+      </div>
+      <div class="fighter-card">
+        <img src="Taekwondo.svg" alt="Taekwondo" class="fighter-img">
+        <div class="relative z-10">
+          <h3 class="text-2xl font-bold mb-2">Taekwondo</h3>
+          <p class="text-slate-200 mb-4">Taekwondo is a Korean Martial art and Olympic sport. This program covers training , certification and competitions in Taekwondo. It is a regular weekday course.</p>
+          <div class="flex gap-3">
+            <a href="./Sports/Taekwondo.html" class="bg-gradient-to-r from-red-500 to-red-700 px-4 py-2 rounded">Learn More</a>
+            <a href="ContactUs.html" class="bg-gradient-to-r from-green-500 to-green-700 px-4 py-2 rounded">Book Session</a>
+          </div>
+        </div>
+      </div>
+      <div class="fighter-card">
+        <img src="Kick Boxing.svg" alt="Kickboxing" class="fighter-img">
+        <div class="relative z-10">
+          <h3 class="text-2xl font-bold mb-2">Kickboxing</h3>
+          <p class="text-slate-200 mb-4">Intense training for power, endurance, and striking accuracyKick Boxing is modern Martial Arts. This program is for people which want to participate in competitions or want to learn art of boxing along with kicking for fitness.</p>
+          <div class="flex gap-3">
+            <a href="./Sports/Kickboxing.html" class="bg-gradient-to-r from-red-500 to-red-700 px-4 py-2 rounded">Learn More</a>
+            <a href="ContactUs.html" class="bg-gradient-to-r from-green-500 to-green-700 px-4 py-2 rounded">Book Session</a>
+          </div>
+        </div>
+      </div>
+      <div class="fighter-card">
+        <img src="Functional Fitness.svg" alt="Judo" class="fighter-img">
+        <div class="relative z-10">
+          <h3 class="text-2xl font-bold mb-2">Functional Fitness</h3>
+          <p class="text-slate-200 mb-4">Functional training is a classification of exercise which involves training the body for the activities performed in daily life. Learn this life art in live environment.</p>
+          <div class="flex gap-3">
+            <a href="./Sports/functional-fitness.html" class="bg-gradient-to-r from-red-500 to-red-700 px-4 py-2 rounded">Learn More</a>
+            <a href="ContactUs.html" class="bg-gradient-to-r from-green-500 to-green-700 px-4 py-2 rounded">Book Session</a>
+          </div>
+        </div>
+      </div>
+      <div class="fighter-card">
+        <img src="model.svg" alt="Boxing" class="fighter-img">
+        <div class="relative z-10">
+          <h3 class="text-2xl font-bold mb-2">Boxing</h3>
+          <p class="text-slate-200 mb-4">Boxing is not only a sport but a way of keeping yourself fit. Learn boxing from a champion to play as a amateur and professional boxer.</p>
+          <div class="flex gap-3">
+            <a href="./Sports/Boxing.html" class="bg-gradient-to-r from-red-500 to-red-700 px-4 py-2 rounded">Learn More</a>
+            <a href="ContactUs.html" class="bg-gradient-to-r from-green-500 to-green-700 px-4 py-2 rounded">Book Session</a>
+          </div>
+        </div>
+      </div>
+      <div class="fighter-card">
+        <img src="mma.svg" alt="MMA" class="fighter-img">
+        <div class="relative z-10">
+          <h3 class="text-2xl font-bold mb-2">Mixed Martial Arts (MMA)</h3>
+          <p class="text-slate-200 mb-4">Ancient Chinese martial art focused on fluid, animal-inspired movements.</p>
+          <div class="flex gap-3">
+            <a href="./Sports/MMA.html" class="bg-gradient-to-r from-red-500 to-red-700 px-4 py-2 rounded">Learn More</a>
+            <a href="ContactUs.html" class="bg-gradient-to-r from-green-500 to-green-700 px-4 py-2 rounded">Book Session</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Principles -->
+  <section class="py-20 bg-gradient-to-r from-slate-900 to-black">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-12">Our Principles</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="principle-card">
+          <div class="text-5xl mb-4">🥋</div>
+          <h3 class="text-xl font-bold mb-2">Discipline</h3>
+          <p class="text-slate-300">Focus and self-control form the foundation of every warrior.</p>
+        </div>
+        <div class="principle-card">
+          <div class="text-5xl mb-4">🙏</div>
+          <h3 class="text-xl font-bold mb-2">Respect</h3>
+          <p class="text-slate-300">Honor your teachers, peers, and the martial arts tradition.</p>
+        </div>
+        <div class="principle-card">
+          <div class="text-5xl mb-4">💪</div>
+          <h3 class="text-xl font-bold mb-2">Strength</h3>
+          <p class="text-slate-300">Build physical and mental resilience through training.</p>
+        </div>
+        <div class="principle-card">
+          <div class="text-5xl mb-4">🚀</div>
+          <h3 class="text-xl font-bold mb-2">Growth</h3>
+          <p class="text-slate-300">Pursue constant improvement in skill, spirit, and life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-20 bg-gradient-to-r from-black to-slate-900">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-12">Our Impact</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <p class="text-5xl font-bold text-red-500 counter" data-target="5000">0</p>
+          <p class="text-slate-400 mt-2">Students Trained</p>
+        </div>
+        <div>
+          <p class="text-5xl font-bold text-red-500 counter" data-target="12">0</p>
+          <p class="text-slate-400 mt-2">States Active</p>
+        </div>
+        <div>
+          <p class="text-5xl font-bold text-red-500 counter" data-target="150">0</p>
+          <p class="text-slate-400 mt-2">Tournaments Hosted</p>
+        </div>
+        <div>
+          <p class="text-5xl font-bold text-red-500 counter" data-target="300">0</p>
+          <p class="text-slate-400 mt-2">Black Belts Achieved</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-10 mt-20">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">About Us</h3>
+        <p>We are a premier martial arts academy dedicated to training, discipline, and personal growth. Our mission is to empower students through martial arts.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-red-400">Home</a></li>
+          <li><a href="Security.html" class="hover:text-red-400">Security Services</a></li>
+          <li><a href="events.html" class="hover:text-red-400">Events</a></li>
+          <li><a href="ContactUs.html" class="hover:text-red-400">Contact</a></li>
+          <li><a href="gallery.html" class="hover:text-red-400">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">Follow Us</h3>
+        <div class="flex space-x-4">
+          <a href="https://www.facebook.com/shauryamartialartsfitness/" class="hover:text-red-400">Facebook</a>
+          <a href="https://www.instagram.com/shauryamartialarts/?hl=en" class="hover:text-red-400">Instagram</a>
+          <a href="https://www.youtube.com/@shauryamartialarts3938" class="hover:text-red-400">YouTube</a>
+        </div>
+      <div>
+        <br>
+        <h3 class="text-xl font-bold mb-4 text-white">Contact Info</h3>
+        <p>Above Powerlift Fitness, Opp. Rabindranath Tagore School, Balewadi Rd, Pune – 411045</p>
+        <p>shaurya.martialarts@gmail.com</p>
+        <p>+91 91093 61581</p>
+      </div>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-slate-500">© 2025 Martial Arts Academy. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', e => {
+        e.target.classList.add('punch');
+        setTimeout(() => e.target.classList.remove('punch'), 300);
+      });
+    });
+    const counters = document.querySelectorAll('.counter');
+    const options = { threshold: 0.5 };
+    const animateCounter = (counter) => {
+      const target = +counter.getAttribute('data-target');
+      const speed = target / 100;
+      let count = 0;
+      const update = () => {
+        count += speed;
+        if (count < target) {
+          counter.innerText = Math.floor(count);
+          requestAnimationFrame(update);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      update();
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+    counters.forEach(c => observer.observe(c));
+  </script>
+
+</body>
+</html>
