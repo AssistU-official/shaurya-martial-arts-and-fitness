@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MMA - Shaurya Martial Arts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #0f172a; color: white; }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .punch { animation: punch 0.3s ease; }
+    @keyframes punch {
+      0% { transform: scale(1); box-shadow: 0 0 0 rgba(255,0,0,0); }
+      50% { transform: scale(1.2); box-shadow: 0 0 20px rgba(255,0,0,0.8); }
+      100% { transform: scale(1); box-shadow: 0 0 0 rgba(255,0,0,0); }
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-white">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-slate-900 to-black text-white p-4 shadow-lg fixed w-full top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-3">
+        <img src="./../logo.avif" alt="Logo" class="w-10 h-10 rounded-full border-2 border-red-500 shadow-lg">
+        <span class="text-2xl font-bold tracking-wider">Shaurya Martial Arts</span>
+      </a>
+      <div class="space-x-6">
+        <a href="./../index.html" class="nav-link hover:text-red-400 transition">Home</a>
+        <a href="./../aboutus.html" class="nav-link hover:text-red-400 transition">About</a>
+        <a href="./../corporate-training.html" class="nav-link hover:text-red-400 transition">Corporate Training</a>
+        <a href="./../Security.html" class="nav-link hover:text-red-400 transition">Security Services</a>
+        <a href="./../Gallery.html" class="nav-link hover:text-red-400 transition">Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="mt-24">
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] flex items-center justify-center text-center fade-in">
+      <img src="mma-hero.jpg" alt="MMA Action" class="absolute inset-0 w-full h-full object-cover opacity-50">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 px-6">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">Mixed Martial Arts (MMA)</h1>
+        <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+          MMA is the ultimate fusion of martial arts — a dynamic combat sport that blends striking, grappling, and ground fighting.
+        </p>
+      </div>
+    </section>
+
+    <!-- Definition / Nature -->
+    <section class="py-16 container mx-auto px-6 fade-in">
+      <h2 class="text-3xl font-bold text-red-500 mb-6">What is MMA?</h2>
+      <p class="text-slate-300 mb-4">
+        Mixed Martial Arts (MMA) combines techniques from boxing, wrestling, Brazilian jiu-jitsu, Muay Thai, and more. It’s known as one of the most complete combat systems in the world, testing both physical and mental endurance.
+      </p>
+      <p class="text-slate-300">
+        Beyond professional fighting, MMA has grown into a popular fitness regime, teaching discipline, resilience, and all-round self-defense skills.
+      </p>
+    </section>
+
+    <!-- Benefits -->
+    <section class="py-16 bg-gradient-to-r from-black to-slate-900 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-red-500 mb-12">Benefits of MMA</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+          <div class="p-6 bg-slate-800/50 rounded-lg shadow-lg border border-slate-700">
+            <!-- Strength Icon -->
+            <svg class="w-12 h-12 text-red-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 01-8 0M12 14v7m-6-7v7m12-7v7"/>
+            </svg>
+            <h3 class="text-xl font-bold text-white mb-2">Total Body Fitness</h3>
+            <p class="text-slate-300">Builds strength, speed, stamina, and endurance like no other sport.</p>
+          </div>
+
+          <div class="p-6 bg-slate-800/50 rounded-lg shadow-lg border border-slate-700">
+            <!-- Brain Icon -->
+            <svg class="w-12 h-12 text-red-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20c4.418 0 8-3.582 8-8S16.418 4 12 4 4 7.582 4 12s3.582 8 8 8z"/>
+            </svg>
+            <h3 class="text-xl font-bold text-white mb-2">Mental Resilience</h3>
+            <p class="text-slate-300">Improves focus, confidence, decision-making, and emotional control.</p>
+          </div>
+
+          <div class="p-6 bg-slate-800/50 rounded-lg shadow-lg border border-slate-700">
+            <!-- Shield Icon -->
+            <svg class="w-12 h-12 text-red-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4l8 4v4c0 5-3.5 9-8 10-4.5-1-8-5-8-10V8l8-4z"/>
+            </svg>
+            <h3 class="text-xl font-bold text-white mb-2">Practical Self-Defense</h3>
+            <p class="text-slate-300">Equips you with real-world techniques to protect yourself effectively.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Stages of Learning -->
+<section class="py-16 container mx-auto px-6 fade-in">
+  <h2 class="text-3xl font-bold text-red-500 mb-12 text-center">Stages of Learning & Effort Required</h2>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+    <!-- Beginner -->
+    <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 text-center">
+      <!-- Book Icon -->
+      <svg class="w-12 h-12 text-red-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 16v-2m8-8h2M2 12h2m15.364 6.364l1.414 1.414M4.222 4.222l1.414 1.414M18.364 5.636l1.414-1.414M5.636 18.364l1.414-1.414" />
+      </svg>
+      <h3 class="text-xl font-bold mb-2">Beginner</h3>
+      <p class="text-slate-300 text-sm">1–6 months: Learn stance, guard, striking basics, and ground movement.</p>
+    </div>
+
+    <!-- Intermediate -->
+    <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 text-center">
+      <!-- Target Icon -->
+      <svg class="w-12 h-12 text-red-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <circle cx="12" cy="12" r="10" stroke-width="2"/>
+        <circle cx="12" cy="12" r="6" stroke-width="2"/>
+        <circle cx="12" cy="12" r="2" stroke-width="2"/>
+      </svg>
+      <h3 class="text-xl font-bold mb-2">Intermediate</h3>
+      <p class="text-slate-300 text-sm">6–18 months: Develop combos, submissions, takedowns, and sparring.</p>
+    </div>
+
+    <!-- Advanced -->
+    <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 text-center">
+      <!-- Fire Icon -->
+      <svg class="w-12 h-12 text-red-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2.25M12 19.25V22m9-10h-2.25M5.25 12H3m14.364 6.364L18.364 18m-12.728 0l1.414-1.414M16.95 7.05l1.414-1.414M7.05 7.05 5.636 5.636" />
+      </svg>
+      <h3 class="text-xl font-bold mb-2">Advanced</h3>
+      <p class="text-slate-300 text-sm">2–4 years: Master strategy, cage control, advanced grappling, and striking.</p>
+    </div>
+
+    <!-- Professional -->
+    <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 text-center">
+      <!-- Trophy Icon -->
+      <svg class="w-12 h-12 text-red-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 21h8M12 17v4m4-10V5a1 1 0 00-1-1H9a1 1 0 00-1 1v6H4a2 2 0 01-2-2V5h20v4a2 2 0 01-2 2h-4z"/>
+      </svg>
+      <h3 class="text-xl font-bold mb-2">Professional</h3>
+      <p class="text-slate-300 text-sm">5+ years: Compete professionally, coach others, and refine all skills.</p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Scope & Future -->
+    <section class="py-16 bg-gradient-to-r from-black to-slate-900 fade-in">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-red-500 mb-6">Scope & Future of MMA</h2>
+        <p class="text-slate-300 mb-8 max-w-3xl mx-auto">
+          MMA has exploded into one of the fastest-growing sports globally. It offers opportunities for athletes, trainers, and enthusiasts, while also shaping modern fitness and self-defense culture.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+          <!-- Career -->
+          <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 text-center">
+            <svg class="w-14 h-14 text-red-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12 12 0 01-12.32 0L12 14z" />
+            </svg>
+            <h3 class="text-xl font-bold mb-2">Career Opportunities</h3>
+            <p class="text-slate-300 text-sm">From UFC fighters to trainers, MMA opens diverse career paths.</p>
+          </div>
+
+          <!-- Fitness -->
+          <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 text-center">
+            <svg class="w-14 h-14 text-red-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 21v-2a4 4 0 00-8 0v2M12 11a4 4 0 100-8 4 4 0 000 8z" />
+            </svg>
+            <h3 class="text-xl font-bold mb-2">Global Fitness Trend</h3>
+            <p class="text-slate-300 text-sm">MMA-inspired workouts are dominating gyms and training centers.</p>
+          </div>
+
+          <!-- Popularity -->
+          <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 text-center">
+            <svg class="w-14 h-14 text-red-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 100 20 10 10 0 000-20z" />
+            </svg>
+            <h3 class="text-xl font-bold mb-2">Rising Popularity</h3>
+            <p class="text-slate-300 text-sm">Now one of the most watched and practiced combat sports globally.</p>
+          </div>
+
+          <!-- Future Tech -->
+          <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 text-center">
+            <svg class="w-14 h-14 text-red-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
+            </svg>
+            <h3 class="text-xl font-bold mb-2">Future Tech</h3>
+            <p class="text-slate-300 text-sm">AI-driven analysis, VR sparring, and advanced gear will define MMA training.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MMA in Action -->
+    <section class="py-16 container mx-auto px-6 fade-in">
+      <h2 class="text-3xl font-bold text-red-500 mb-6 text-center">MMA in Action</h2>
+      <p class="text-slate-300 mb-8 text-center">Showcase highlight reels, dynamic images, or athlete cutouts here.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="h-64 bg-slate-800 rounded-lg flex items-center justify-center text-slate-500">Insert Image</div>
+        <div class="h-64 bg-slate-800 rounded-lg flex items-center justify-center text-slate-500">Insert Image</div>
+        <div class="h-64 bg-slate-800 rounded-lg flex items-center justify-center text-slate-500">Insert Image</div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 container mx-auto px-6 fade-in text-center">
+      <h2 class="text-3xl font-bold text-red-500 mb-4">Get in Touch</h2>
+      <p class="text-slate-300 mb-6">Want to train in MMA, join workshops, or learn self-defense? Contact us today!</p>
+      <a href="./../contactus.html"
+         class="inline-block bg-gradient-to-r from-green-500 to-green-700 text-white px-6 py-3 rounded-lg shadow-lg hover:scale-105 transition">
+        Contact Us
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-10 mt-20">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">About Us</h3>
+        <p>We are a premier martial arts academy dedicated to training, discipline, and personal growth. Our mission is to empower students through martial arts.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-red-400">Home</a></li>
+          <li><a href="Security.html" class="hover:text-red-400">Security Services</a></li>
+          <li><a href="events.html" class="hover:text-red-400">Events</a></li>
+          <li><a href="ContactUs.html" class="hover:text-red-400">Contact</a></li>
+          <li><a href="gallery.html" class="hover:text-red-400">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-white">Follow Us</h3>
+        <div class="flex space-x-4">
+          <a href="https://www.facebook.com/shauryamartialartsfitness/" class="hover:text-red-400">Facebook</a>
+          <a href="https://www.instagram.com/shauryamartialarts/?hl=en" class="hover:text-red-400">Instagram</a>
+          <a href="https://www.youtube.com/@shauryamartialarts3938" class="hover:text-red-400">YouTube</a>
+        </div>
+      <div>
+        <br>
+        <h3 class="text-xl font-bold mb-4 text-white">Contact Info</h3>
+        <p>Above Powerlift Fitness, Opp. Rabindranath Tagore School, Balewadi Rd, Pune – 411045</p>
+        <p>shaurya.martialarts@gmail.com</p>
+        <p>+91 91093 61581</p>
+      </div>
+      </div>
+    </div>
+    <div class="text-center text-slate-600 mt-10 border-t border-slate-800 pt-4">
+      &copy; 2025 Shaurya Martial Arts. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Script for fade-in -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add("visible");
+        });
+      }, { threshold: 0.2 });
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>
